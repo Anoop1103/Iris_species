@@ -26,10 +26,10 @@ def run():
     st.sidebar.image(image_office)
     st.title("Predicting species of Iris flower")
     if add_selectbox == 'Online':
-        sepal_length = st.number_input('sepal_length' , min_value=4.6, max_value=7.1, value=0.1)
-        sepal_width = st.number_input('sepal_width',min_value=2.3, max_value=3.6, value=0.1)
-        petal_length = st.number_input('petal_length', min_value=1.3, max_value=6, value=0.1)
-        petal_width = st.number_input('petal_width', min_value=0.2, max_value=2.5, value=0.1)
+        sepal_length = st.number_input('sepal_length' , min_value=4.6, max_value=7.1, value=4.6)
+        sepal_width = st.number_input('sepal_width',min_value=2.3, max_value=3.6, value=2.3)
+        petal_length = st.number_input('petal_length', min_value=1.3, max_value=6, value=1.3)
+        petal_width = st.number_input('petal_width', min_value=0.2, max_value=2.5, value=0.2)
         output=""
         input_dict={'sepal_length':sepal_length,'sepal_width':sepal_width,'petal_length':petal_length,'petal_width':petal_width}                  
         input_df = pd.DataFrame([input_dict])
