@@ -36,7 +36,7 @@ def run():
         if st.button("Predict species"):
             output = predict(model=model, input_df=input_df)
             output = str(output)
-        st.success('The output is {}'.format(output))
+        st.success('The species is {}'.format(output))
     if add_selectbox == 'Batch':
         file_upload = st.file_uploader("Upload csv file for predictions", type=["csv"])
         if file_upload is not None:
