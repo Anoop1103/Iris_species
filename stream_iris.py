@@ -24,7 +24,7 @@ def run():
     st.sidebar.info('This app is created to predict the species of Iris flower')
     st.sidebar.success('https://www.pycaret.org')
     st.sidebar.image(image_office)
-    st.title("Predicting employee leaving")
+    st.title("Predicting species of Iris flower")
     if add_selectbox == 'Online':
         sepal_length = st.number_input('sepal_length' , min_value=4.6, max_value=7.1, value=0.1)
         sepal_width = st.number_input('sepal_width',min_value=2.3, max_value=3.6, value=0.1)
